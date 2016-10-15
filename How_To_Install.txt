@@ -1,0 +1,3 @@
+Stock Research is a Java program so you need to install JRE or JDK on your computer first.
+If you don't write Java code and want only to run Java programs go for JRE.
+link for JRE: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
