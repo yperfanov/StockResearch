@@ -1,0 +1,53 @@
+In order this program to work your computer MUST have working Internet connection.
+
+For displaying common stock or ETF info enter valid common stock or ETF ticker in the Common
+Stocks tab and press enter or click on the Show Info button. If entered ticker is not valid
+common stock or ETF this program won't work.
+
+For displaying CEE Fund info enter valid CEE Fund ticker in the CEEFunds tab and press enter
+or click on the Show Info button. If entered ticker is not valid CEE fund this program
+won't work.
+
+When dividends tab is used it gets ex-dividend dates and dividend payouts from
+"www.dividend.com/ex-dividend-dates.php" for all symbols in the ticker list. To manage the
+ticker list use the buttons.
+
+To generate info for given period use the buttons. For custom date range click on Choose Date button.
+For specific date enter the same date twice(example "08-09 08-09"), for date range enter valid date
+range(example "09-10 09-15").
+
+When using Add Symbol List the added file must be a text file("<name>.txt") and the text in it must
+be tickers separated only by spaces(not punctuation marks) or new lines.
+
+Examples:
+1) BBN JPM ZION BCS-d c$k    <-- VALID
+   mua jpm$A nnn-d
+   MYi
+   gs-b
+   
+2) BBN                       <-- VALID
+   JPM
+   ZION
+   BCS-d
+   c$k
+   mua
+   jpm$A
+   nnn-d
+   
+3) BBN; JPM, ZION; BCS-d c$k,    <-- NOT VALID
+   mua jpm$A nnn-d!?
+   
+Preferred stocks must be entered with '-' or "$".
+This program is NOT case sensitive - it doesn't matter if you enter tickers with upper or lower cases.
+
+Known Bugs:
+1)Because Yahoo Finance limits the requests one could make to their servers to 2000 per hour when CEE Funds
+  and Common Stocks tabs are used more than 2000 times in one hour this program will stop working for unknown
+  time.
+2)Entering date range for ex-dividend dates which includes two different years(12-30 01-05) won't work.
+3)Google news might not be the latest.
+4)This program is based on the html code of the source pages*. If one of them is amended this program probably 
+  will stop working properly or even won't work at all.
+  
+ *finance.yahoo.com, google.com/finance, cefconnect.com, wsj.com, seekingalpha.com,
+  www.dividend.com/ex-dividend-dates.php
